@@ -47,7 +47,6 @@ class DynamicIntArray:
 
 lista = DynamicIntArray()
 
-# Saída: Lista vazia!
 if lista.is_empty():
     print("Lista vazia!")
 else:
