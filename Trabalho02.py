@@ -98,7 +98,6 @@ class SingleLinkedList:
             trav = trav.next
         return " -> ".join(elements)
 
-
 # Criando a lista inicial: 5 -> 23 -> 7 -> 13
 linked_list = SingleLinkedList()
 linked_list.append(5)
