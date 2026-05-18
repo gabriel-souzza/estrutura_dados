@@ -1,30 +1,22 @@
-def h_index_linear_decrescente(citacoes):
-    h = 0
-    for i in range(len(citacoes)):
-        if citacoes[i] >= i + 1:
-            h = i + 1
-        else:
-            break 
-    return h
+def h_index_linear_decrescente(citations):
+    for i in range(len(citations)):
+        if citations[i] < i + 1:
+            return i
+    return len(citations)
 
-def h_index_binaria_decrescente(citacoes):
+def h_index_binaria_decrescente(citations):
     start = 0
-    end = len(citacoes) - 1
+    end = len(citations) - 1
     h = 0
     while start <= end:
         middle = (start + end) // 2
-        if citacoes[middle] >= middle + 1:
+        if citations[middle] >= middle + 1:
             h = middle + 1
             start = middle + 1
         else:
             end = middle - 1
     return h
             
-        
-
-
-
-
 
 citacoesExemplo = [1, 1]
 
